@@ -24,7 +24,7 @@ Instructions for mmsegmentation are available [here](https://github.com/open-mml
 
 ## Datasets
 
-- Download the datasets [[Zero-Waste-f]](https://github.com/dbash/zerowaste) [[Spectral-Waste]](https://sites.google.com/unizar.es/spectralwaste)
+- Download the datasets [[Zero-Waste-f]](https://github.com/dbash/zerowaste) &nbsp; [[Zero-Waste-aug]](https://zenodo.org/records/6412647) &nbsp; [[Spectral-Waste]](https://sites.google.com/unizar.es/spectralwaste)
 
 ## Training
 Use following commands to train the model:
