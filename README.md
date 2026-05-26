@@ -29,23 +29,57 @@ Instructions for mmsegmentation are available [here](https://github.com/open-mml
 ## Training
 Use following commands to train the model:
 
-**Zero-Waste-f dataset**
+**Zero-Waste-f and ZeroWaste-aug dataset**
+
+Set the dataset path in `configs/_base_/datasets/zero_waste.py` then use below command for training.
 ```
-python train.py configs/ewsegnet/uper_cosnet_zerowaste_40k.py
+python train.py configs/ewsegnet/uper_zerowaste_40k.py
 ```
 
 **Spectral-Waste dataset (RGB only)**
 ```
-python train.py configs/ewsegnet/uper_cosnet_specwaste_40k.py
+python train.py configs/ewsegnet/uper_specwaste_40k.py
 ```
+
+**Model Weights**
+
+<table>
+  <tr>
+    <th>Dataset</th>
+    <th>Score</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>ZeroWaste-aug</td>
+    <td>--</td>
+    <td><a href=''>download</a></td>
+  </tr>
+  <tr>
+    <td>ZeroWaste-f</td>
+    <td>57.14</td>
+    <td><a href=''>download</a></td>
+  </tr>
+  <tr>
+    <td>ZeroWaste-f</td>
+    <td>56.88</td>
+    <td><a href=''>download</a></td>
+  </tr>
+  <tr>
+    <td>SpectralWaste</td>
+    <td>--</td>
+    <td><a href=''>download</a></td>
+  </tr>
+</table>
+
+> Download ImageNet-1k weights from [here]()
 
 ## Evaluation
 ```
-# Zero-Waste-f
-python test.py configs/cosnet/uper_ewsegnet_zerowaste_40k.py <path to checkpoint_best.pth> --eval mIoU
+# Zero-Waste-f and ZeroWaste-aug
+python test.py configs/ewsegnet/uper_zerowaste_40k.py <path to checkpoint_best.pth> --eval mIoU
 
 # Spectral-Waste
-python test.py configs/cosnet/uper_ewsegnet_specwaste_40k.py <path to checkpoint_best.pth> --eval mIoU
+python test.py configs/ewsegnet/uper_specwaste_40k.py <path to checkpoint_best.pth> --eval mIoU
 ```
 
 
