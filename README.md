@@ -46,12 +46,12 @@ python train.py configs/ewsegnet/uper_specwaste_40k.py
 <table>
   <tr>
     <th>Dataset</th>
-    <th>Score</th>
+    <th>mIoU Score</th>
     <th>Link</th>
   </tr>
   <tr>
     <td>ZeroWaste-aug</td>
-    <td>--</td>
+    <td>74.10</td>
     <td><a href=''>download</a></td>
   </tr>
   <tr>
@@ -66,12 +66,14 @@ python train.py configs/ewsegnet/uper_specwaste_40k.py
   </tr>
   <tr>
     <td>SpectralWaste</td>
-    <td>--</td>
+    <td>71.03</td>
     <td><a href=''>download</a></td>
   </tr>
 </table>
 
 > Download ImageNet-1k weights from [here]()
+
+**Note:** Background is not included in mIoU of SpectralWaste.
 
 ## Evaluation
 ```
