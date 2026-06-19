@@ -1,6 +1,6 @@
 Towards Effective Waste Segmentation for Automated Waste Recycling in Cluttered Background
 ----
-[![project](https://img.shields.io/badge/project-url-beige.svg)](https://mustansarfiaz.github.io/EWSegNet/)
+[![project](https://img.shields.io/badge/project-url-beige.svg)](https://mustansarfiaz.github.io/EWSegNet/) [![arxiv](https://img.shields.io/badge/arxiv-paper-royalblue.svg)](https://arxiv.org/abs/2606.13587)
 
 
 ## Overview
